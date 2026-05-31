@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body style="margin:0;background:#1a1a2e;display:flex;align-items:center;justify-content:center;height:100vh">
+<div id="msg" style="color:#fff;font-size:24px;text-align:center">コピー中...</div>
+<script>
+navigator.clipboard.writeText("hec15851585")
+  .then(function(){
+    document.getElementById('msg').innerHTML='✅ コピー完了！<br><span style="font-size:14px">hec15851585</span>';
+  })
+  .catch(function(){
+    var t=document.createElement('textarea');
+    t.value='hec15851585';
+    document.body.appendChild(t);
+    t.select();
+    document.execCommand('copy');
+    document.getElementById('msg').innerHTML='✅ コピー完了！<br><span style="font-size:14px">hec15851585</span>';
+  });
+</script>
+</body>
+</html>
