@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body style="margin:0;background:#1a1a2e;display:flex;align-items:center;justify-content:center;height:100vh">
+<div id="msg" style="color:#fff;font-size:24px;text-align:center">コピー中...</div>
+<script>
+navigator.clipboard.writeText("now22558877")
+  .then(function(){
+    document.getElementById('msg').innerHTML='✅ コピー完了！<br><span style="font-size:14px">now22558877</span>';
+  })
+  .catch(function(){
+    var t=document.createElement('textarea');
+    t.value='now22558877';
+    document.body.appendChild(t);
+    t.select();
+    document.execCommand('copy');
+    document.getElementById('msg').innerHTML='✅ コピー完了！<br><span style="font-size:14px">now22558877</span>';
+  });
+</script>
+</body>
+</html>
